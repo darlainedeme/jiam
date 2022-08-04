@@ -14,6 +14,9 @@ from streamlit_folium import folium_static
 import folium
 import geopandas as gpd
 
+option = st.selectbox(
+    'How would you like to filter the places?',
+    ('By place', 'By type', 'By day'))
 
 places = pd.read_csv('places.csv', encoding="ISO-8859-1", index_col=0)
 places = places[places['Latitude'].notna()]
