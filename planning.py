@@ -57,11 +57,6 @@ feature_group_2 = folium.FeatureGroup(name='Negril', show=True)
 feature_group_3 = folium.FeatureGroup(name='Port Antonio', show=True)
 feature_group_4 = folium.FeatureGroup(name='St. Ann Parish', show=True)
 
-style1 = {'fillColor': 'green', 'color': 'green'}
-style2 = {'fillColor': 'yellow', 'color': 'yellow'}
-style3 = {'fillColor': 'blue', 'color': 'blue'}
-style4 = {'fillColor': 'red', 'color': 'red'}            
-
 def plotcase(point):
     '''input: series that contains a numeric named latitude and a numeric named longitude
     this function creates a CircleMarker and adds it to your this_map'''
@@ -124,17 +119,18 @@ def plotanna(point):
 
 
 # case
-case_gdf = places[places.Cosa == 'CASA']
-case_gdf.apply(plotcase, axis = 1)
+if option == 'By place':
+    case_gdf = places[places.Cosa == 'CASA']
+    case_gdf.apply(plotcase, axis = 1)
 
-negril_gdf = places[(places.Dove == 'NEGRIL') & (places.Cosa != 'CASA')]
-negril_gdf.apply(plotnegril, axis = 1)
+    negril_gdf = places[(places.Dove == 'NEGRIL') & (places.Cosa != 'CASA')]
+    negril_gdf.apply(plotnegril, axis = 1)
 
-anthony_gdf = places[(places.Dove == 'PORT ANTONIO') & (places.Cosa != 'CASA')]
-anthony_gdf.apply(plotantonio, axis = 1)
+    anthony_gdf = places[(places.Dove == 'PORT ANTONIO') & (places.Cosa != 'CASA')]
+    anthony_gdf.apply(plotantonio, axis = 1)
 
-anna_gdf = places[(places.Dove == 'ST. ANN PARISH') & (places.Cosa != 'CASA')]
-anna_gdf.apply(plotanna, axis = 1)
+    anna_gdf = places[(places.Dove == 'ST. ANN PARISH') & (places.Cosa != 'CASA')]
+    anna_gdf.apply(plotanna, axis = 1)
 
 
 feature_group_1.add_to(m)
