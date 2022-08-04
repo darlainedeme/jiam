@@ -153,7 +153,7 @@ folium.LayerControl().add_to(m)
 
 
 # Displaying a map         
-m.save('map.html')
+# m.save('map.html')
 folium_static(m)
 
 
