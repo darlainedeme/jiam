@@ -140,33 +140,6 @@ if option == 'By city':
     feature_group_3.add_to(m)
     feature_group_4.add_to(m)
 
-elif option == 'By type': 
-    type_of_option = st.sidebar.selectbox('Which one', list(places.Cosa.unique())[1:], index=1)
-    # type_of_option = 'SPIAGGIA'
-    
-    feature_group_2 = folium.FeatureGroup(name=type_of_option, show=True)
-    
-    plot_gdf = places[places.Cosa == type_of_option]
-    plot_gdf.apply(plotnegril, axis = 1)
-
-    feature_group_2.add_to(m)
-    
-elif option == 'By day': 
-
-    start_date = dt.date(year=2022,month=8,day=7) 
-    end_date = dt.date(year=2022,month=8,day=18) 
-
-    days = st.sidebar.slider('Select date', min_value=start_date, value=end_date)
-
-    day = 'SPIAGGIA'
-    
-    feature_group_2 = folium.FeatureGroup(name=days, show=True)
-    
-    plot_gdf = places[places.Cosa == days]
-    plot_gdf.apply(plotnegril, axis = 1)  
-
-    feature_group_3.add_to(m)  
-
 
 m.fit_bounds(m.get_bounds())
            
