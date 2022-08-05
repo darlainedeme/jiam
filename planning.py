@@ -72,7 +72,7 @@ def plotnegril(point):
     '''input: series that contains a numeric named latitude and a numeric named longitude
     this function creates a CircleMarker and adds it to your this_map'''
     folium.CircleMarker(location=[point.Latitude, point.Longitude],
-                        popup="<a href=" + point.Link + ">" + point.Nome + str"</a>"
+                        popup="<a href=" + point.Link + ">" + point.Nome + "</a>",
                         color = 'red',
                         radius=2,
                         weight=5).add_to(feature_group_2)
