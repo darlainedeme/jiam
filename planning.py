@@ -27,3 +27,119 @@ option = st.sidebar.selectbox('How would you like to filter the places?',
                                'By type',
                                'By day'], index=1)         
      
+m = folium.Map(location=[lat, long], zoom_start=9)
+tile = folium.TileLayer(
+    tiles='https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+    attr='Esri',
+    name='Esri Satellite',
+    overlay=False,
+    control=True
+).add_to(m)
+
+tile = folium.TileLayer(
+    tiles='http://mt0.google.com/vt/lyrs=y&hl=en&x={x}&y={y}&z={z}',
+    attr='Google',
+    name='Google Hybrid',
+    overlay=False,
+    control=True
+).add_to(m)
+
+tile = folium.TileLayer(
+    tiles='http://mt0.google.com/vt/lyrs=m&hl=en&x={x}&y={y}&z={z}',
+    attr='Google',
+    name='Google Maps',
+    overlay=False,
+    control=True
+).add_to(m)
+     
+
+def plotcase(point):
+    '''input: series that contains a numeric named latitude and a numeric named longitude
+    this function creates a CircleMarker and adds it to your this_map'''
+    folium.CircleMarker(location=[point.Latitude, point.Longitude],
+                        popup=str(point.Dove) 
+                        + "\n" 
+                        + "\n" 
+                        + str(point.Nome)
+                        + "\n" 
+                        + "\n" 
+                        + str(point.Descrizione),
+                        color = 'green',
+                        radius=2,
+                        weight=5).add_to(feature_group_1)
+
+def plotnegril(point):
+    '''input: series that contains a numeric named latitude and a numeric named longitude
+    this function creates a CircleMarker and adds it to your this_map'''
+    folium.CircleMarker(location=[point.Latitude, point.Longitude],
+                        popup=str(point.Dove) 
+                        + "\n" 
+                        + "\n" 
+                        + str(point.Nome)
+                        + "\n" 
+                        + "\n" 
+                        + str(point.Descrizione),
+                        color = 'red',
+                        radius=2,
+                        weight=5).add_to(feature_group_2)
+
+def plotantonio(point):
+    '''input: series that contains a numeric named latitude and a numeric named longitude
+    this function creates a CircleMarker and adds it to your this_map'''
+    folium.CircleMarker(location=[point.Latitude, point.Longitude],
+                        popup=str(point.Dove) 
+                        + "\n" 
+                        + "\n" 
+                        + str(point.Nome)
+                        + "\n" 
+                        + "\n" 
+                        + str(point.Descrizione),
+                        color = 'blue',
+                        radius=2,
+                        weight=5).add_to(feature_group_3)
+
+def plotanna(point):
+    '''input: series that contains a numeric named latitude and a numeric named longitude
+    this function creates a CircleMarker and adds it to your this_map'''
+    folium.CircleMarker(location=[point.Latitude, point.Longitude],
+                        popup=str(point.Dove) 
+                        + "\n" 
+                        + "\n" 
+                        + str(point.Nome)
+                        + "\n" 
+                        + "\n" 
+                        + str(point.Descrizione),
+                        color = 'yellow',
+                        radius=2,
+                        weight=5).add_to(feature_group_4)
+
+# case
+feature_group_1 = folium.FeatureGroup(name='Case', show=True)
+case_gdf = places[places.Cosa == 'CASA']
+case_gdf.apply(plotcase, axis = 1)
+feature_group_1.add_to(m)
+
+if option == 'By city': 
+    
+    feature_group_2 = folium.FeatureGroup(name='Negril', show=True)
+    feature_group_3 = folium.FeatureGroup(name='Port Antonio', show=True)
+    feature_group_4 = folium.FeatureGroup(name='St. Ann Parish', show=True)
+
+
+    negril_gdf = places[(places.Dove == 'NEGRIL') & (places.Cosa != 'CASA')]
+    negril_gdf.apply(plotnegril, axis = 1)
+    
+    anthony_gdf = places[(places.Dove == 'PORT ANTONIO') & (places.Cosa != 'CASA')]
+    anthony_gdf.apply(plotantonio, axis = 1)
+    
+    anna_gdf = places[(places.Dove == 'ST. ANN PARISH') & (places.Cosa != 'CASA')]
+    anna_gdf.apply(plotanna, axis = 1)
+    
+    
+    feature_group_2.add_to(m)
+    feature_group_3.add_to(m)
+    feature_group_4.add_to(m)
+
+
+
+                 
