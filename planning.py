@@ -152,9 +152,11 @@ elif option == 'By type':
     feature_group_2.add_to(m)
     
 elif option == 'By day': 
-    lenght = pd.date_range(start="2022-08-07",end="2022-08-18")
-    
-    days = st.sidebar.slider('Which day', lenght)
+
+    start_date = dt.date(year=2022,month=8,day=7) 
+    end_date = dt.date(year=2022,month=8,day=18) 
+
+    days = st.sidebar.slider('Select date', min_value=start_date, value=end_date)
 
     day = 'SPIAGGIA'
     
