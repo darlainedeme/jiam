@@ -158,14 +158,16 @@ elif option == 'By day':
     start_date = dt.date(year=2022,month=8,day=7) 
     end_date = dt.date(year=2022,month=8,day=18) 
 
-    days = st.sidebar.slider('Select date', min_value=start_date, value=end_date)
+    st.write('Per questa visualizzazione bisogna prima che fissiamo il giorno in cui vogliamo visitare ciascuna delle attivitá')
 
-    day = 'SPIAGGIA'
+    day = st.sidebar.slider('Select date', min_value=start_date, value=end_date)
+
+    # day = 'SPIAGGIA'
     
-    feature_group_2 = folium.FeatureGroup(name=days, show=True)
+    feature_group_2 = folium.FeatureGroup(name=day, show=True)
     
-    plot_gdf = places[places.Cosa == day]
-    plot_gdf.apply(plotnegril, axis = 1)  
+    # plot_gdf = places[places.Cosa == day]
+    # plot_gdf.apply(plotnegril, axis = 1)  
 
     feature_group_2.add_to(m)  
 
