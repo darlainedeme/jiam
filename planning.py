@@ -25,7 +25,7 @@ lat = places.geometry.y.mean()
 option = st.sidebar.selectbox('How would you like to filter the places?',
                               ['By city',
                                'By type',
-                               'By day'], index=0)         
+                               'By day'], index=1)         
      
 m = folium.Map(location=[lat, long], zoom_start=9)
 tile = folium.TileLayer(
@@ -74,6 +74,7 @@ def plotnegril(point):
     folium.CircleMarker(location=[point.Latitude, point.Longitude],
                         popup="<a href=" + str(point.Link) + ">" + str(point.Nome) + "</a>",
                         color = 'red',
+                        html='<div style="font-size: 24pt">' + str(point.Nome) + '</div>'
                         radius=2,
                         weight=5).add_to(feature_group_2)
 
