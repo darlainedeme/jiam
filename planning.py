@@ -13,10 +13,7 @@ import matplotlib.pyplot as plt
 from streamlit_folium import folium_static
 import folium
 import geopandas as gpd
-
-option = st.selectbox(
-    'How would you like to filter the places?',
-    ('By place', 'By type', 'By day'))
+import datetime as dt
 
 places = pd.read_csv('places.csv', encoding="ISO-8859-1", index_col=0)
 places = places[places['Latitude'].notna()]
@@ -24,7 +21,11 @@ places = gpd.GeoDataFrame(places, geometry=gpd.points_from_xy(places['Longitude'
 # center on Liberty Bell
 long = places.geometry.x.mean()
 lat = places.geometry.y.mean()
-            
+   
+option = st.sidebar.selectbox('How would you like to filter the places?',
+                              ['By city',
+                               'By type',
+                               'By day'], index=1)         
           
 m = folium.Map(location=[lat, long], zoom_start=9)
 tile = folium.TileLayer(
@@ -50,12 +51,7 @@ tile = folium.TileLayer(
     overlay=False,
     control=True
 ).add_to(m)
-
-
-feature_group_1 = folium.FeatureGroup(name='Case', show=True)
-feature_group_2 = folium.FeatureGroup(name='Negril', show=True)
-feature_group_3 = folium.FeatureGroup(name='Port Antonio', show=True)
-feature_group_4 = folium.FeatureGroup(name='St. Ann Parish', show=True)
+     
 
 def plotcase(point):
     '''input: series that contains a numeric named latitude and a numeric named longitude
@@ -117,26 +113,50 @@ def plotanna(point):
                         radius=2,
                         weight=5).add_to(feature_group_4)
 
-
 # case
-if option == 'By place':
-    case_gdf = places[places.Cosa == 'CASA']
-    case_gdf.apply(plotcase, axis = 1)
+feature_group_1 = folium.FeatureGroup(name='Case', show=True)
+case_gdf = places[places.Cosa == 'CASA']
+case_gdf.apply(plotcase, axis = 1)
+feature_group_1.add_to(m)
+
+if option == 'By city': 
+    
+    feature_group_2 = folium.FeatureGroup(name='Negril', show=True)
+    feature_group_3 = folium.FeatureGroup(name='Port Antonio', show=True)
+    feature_group_4 = folium.FeatureGroup(name='St. Ann Parish', show=True)
+
 
     negril_gdf = places[(places.Dove == 'NEGRIL') & (places.Cosa != 'CASA')]
     negril_gdf.apply(plotnegril, axis = 1)
-
+    
     anthony_gdf = places[(places.Dove == 'PORT ANTONIO') & (places.Cosa != 'CASA')]
     anthony_gdf.apply(plotantonio, axis = 1)
-
+    
     anna_gdf = places[(places.Dove == 'ST. ANN PARISH') & (places.Cosa != 'CASA')]
     anna_gdf.apply(plotanna, axis = 1)
+    
+    
+    feature_group_2.add_to(m)
+    feature_group_3.add_to(m)
+    feature_group_4.add_to(m)
 
-
-feature_group_1.add_to(m)
-feature_group_2.add_to(m)
-feature_group_3.add_to(m)
-feature_group_4.add_to(m)
+elif option == 'By type': 
+    # type_of_option = st.sidebar.selectbox('Which one', list(places.Cosa.unique())[1:], index=1)
+    type_of_option = 'SPIAGGIA'
+    
+    feature_group_2 = folium.FeatureGroup(name=type_of_option, show=True)
+    
+    plot_gdf = places[places.Cosa == type_of_option]
+    plot_gdf.apply(plotnegril, axis = 1)
+    
+elif option == 'By day': 
+    days = st.sidebar.selectbox('Which day', list(places.Cosa.unique())[1:], index=1)
+    day = 'SPIAGGIA'
+    
+    feature_group_2 = folium.FeatureGroup(name=days, show=True)
+    
+    plot_gdf = places[places.Cosa == days]
+    plot_gdf.apply(plotnegril, axis = 1)    
 
 
 m.fit_bounds(m.get_bounds())
@@ -153,7 +173,7 @@ folium.LayerControl().add_to(m)
 
 
 # Displaying a map         
-# m.save('map.html')
+m.save('map.html')
 folium_static(m)
 
 
