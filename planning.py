@@ -141,8 +141,8 @@ if option == 'By city':
     feature_group_4.add_to(m)
 
 elif option == 'By type': 
-    # type_of_option = st.sidebar.selectbox('Which one', list(places.Cosa.unique())[1:], index=1)
-    type_of_option = 'SPIAGGIA'
+    type_of_option = st.sidebar.selectbox('Which one', list(places.Cosa.unique())[1:], index=1)
+    # type_of_option = 'SPIAGGIA'
     
     feature_group_2 = folium.FeatureGroup(name=type_of_option, show=True)
     
@@ -173,7 +173,7 @@ folium.LayerControl().add_to(m)
 
 
 # Displaying a map         
-m.save('map.html')
+# m.save('map.html')
 folium_static(m)
 
 
