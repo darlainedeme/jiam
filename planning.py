@@ -74,7 +74,11 @@ def plotnegril(point):
     folium.CircleMarker(location=[point.Latitude, point.Longitude],
                         popup="<a href=" + str(point.Link) + ">" + str(point.Nome) + "</a>",
                         color = 'red',
-                        html='<div style="font-size: 24pt">' + str(point.Nome) + '</div>',
+                        icon=DivIcon(
+                            icon_size=(150,36),
+                            icon_anchor=(0,0),
+                            html='<div style="font-size: 24pt">' + str(point.Nome) + '</div>',
+                            ),
                         radius=2,
                         weight=5).add_to(feature_group_2)
 
