@@ -142,4 +142,48 @@ if option == 'By city':
 
 
 
+elif option == 'By type': 
+    type_of_option = st.sidebar.selectbox('Which one', list(places.Cosa.unique())[1:], index=1)
+    # type_of_option = 'SPIAGGIA'
+    
+    feature_group_2 = folium.FeatureGroup(name=type_of_option, show=True)
+    
+    plot_gdf = places[places.Cosa == type_of_option]
+    plot_gdf.apply(plotnegril, axis = 1)
+
+    feature_group_2.add_to(m)
+    
+elif option == 'By day': 
+
+    start_date = dt.date(year=2022,month=8,day=7) 
+    end_date = dt.date(year=2022,month=8,day=18) 
+
+    days = st.sidebar.slider('Select date', min_value=start_date, value=end_date)
+
+    day = 'SPIAGGIA'
+    
+    feature_group_2 = folium.FeatureGroup(name=days, show=True)
+    
+    plot_gdf = places[places.Cosa == days]
+    plot_gdf.apply(plotnegril, axis = 1)  
+
+    feature_group_3.add_to(m)  
+
+m.fit_bounds(m.get_bounds())
+           
+                    
+folium.plugins.Draw(export=True, filename='data.geojson', position='topleft', draw_options=None,
+                    edit_options=None).add_to(m)
+folium.plugins.Fullscreen(position='topleft', title='Full Screen', title_cancel='Exit Full Screen',
+                          force_separate_button=False).add_to(m)
+folium.plugins.MeasureControl(position='bottomleft', primary_length_unit='meters', secondary_length_unit='miles',
+                              primary_area_unit='sqmeters', secondary_area_unit='acres').add_to(m)
+folium.LayerControl().add_to(m)
+
+
+
+# Displaying a map         
+# m.save('map.html')
+folium_static(m)
+
                  
