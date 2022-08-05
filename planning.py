@@ -154,7 +154,7 @@ elif option == 'By type':
 elif option == 'By day': 
     lenght = pd.date_range(start="2022-08-07",end="2022-08-18")
     
-    days = st.sidebar.slider('Which day', list(lenght))
+    days = st.sidebar.slider('Which day', lenght)
 
     day = 'SPIAGGIA'
     
