@@ -165,12 +165,12 @@ elif option == 'By day':
 
     # day = 'SPIAGGIA'
     
-    feature_group_2 = folium.FeatureGroup(name=day, show=True)
+    # feature_group_2 = folium.FeatureGroup(name=day, show=True)
     
     # plot_gdf = places[places.Cosa == day]
     # plot_gdf.apply(plotnegril, axis = 1)  
 
-    feature_group_2.add_to(m)  
+    # feature_group_2.add_to(m)  
 
 m.fit_bounds(m.get_bounds())
            
