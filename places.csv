@@ -4,40 +4,40 @@ ID,Day,Dove,Cosa,Nome,Descrizione,Phone,Indirizzo,Latitude,Longitude,Link
 2,,PORT ANTONIO,CASA,CASA,,,,18.18351797,-76.4329794,
 3,,NEGRIL,SPIAGGIA,SEVEN MILE,,,,18.30284432,-78.33831442,https://www.tripadvisor.com/Attraction_Review-g147313-d148623-Reviews-Seven_Mile_Beach-Negril_Westmoreland_Parish_Jamaica.html
 4,,NEGRIL,SPIAGGIA,BLOODY BAY,,,,18.34834361,-78.33617412,https://www.tripadvisor.com/Attraction_Review-g147313-d777027-Reviews-Bloody_Bay-Negril_Westmoreland_Parish_Jamaica.html
-5,,NEGRIL,LOCALE,BOURBON BEACH,,,,18.28828521,-78.34140208,
-6,,NEGRIL,LOCALE,RICK’S CAFE,,,,18.25444244,-78.36350184,70. Rick's Cafe
-7,,NEGRIL,LOCALE,ROOTS BAMBOO,,,,18.29494629,-78.33858965,
-8,,NEGRIL,ADVENTURE,BLACK RIVER,,,,18.02937464,-77.86544479,
-9,,NEGRIL,SPIAGGIA,Booby Cay Island,,,,18.33805493,-78.3478974,4. Booby Cay Island
-10,,NEGRIL,ADVENTURE,Barney's Flower & Hummingbird Garden Jamaica,,,,18.24508666,-78.35279288,5. Barney's Flower & Hummingbird Garden Jamaica
-11,,NEGRIL,ADVENTURE,YS Falls,,,,18.1557681,-77.82549872,7. YS Falls
-12,,NEGRIL,CULTURA,Negril Lighthouse,,,,18.24871489,-78.36029671,10. Negril Lighthouse
-13,,NEGRIL,SHOPPING,Times Square Mall,,,,18.28877689,-78.33952712,11. Times Square Mall
-14,,NEGRIL,CULTURA,Peter Tosh Monument,,,,18.14883388,-78.02864606,12. Peter Tosh Monument
-15,,NEGRIL,ADVENTURE,Blue Mountain Experience,,,,18.41184134,-77.08715378,14. Blue Mountain Experience
-16,,NEGRIL,RELAX,Ocean View Spa,,,,18.30765398,-78.33787287,34. Ocean View Spa
-17,,NEGRIL,ADVENTURE,JuJu Tours,,,,,,35. JuJu Tours
-18,,NEGRIL,ADVENTURE,Reef Explorer Diving Center,,,,18.30606091,-78.33831575,36. Reef Explorer Diving Center
-19,,NEGRIL,TOUR,Tiki Pon Da Sea,,,,18.30576509,-78.33909042,39. Tiki Pon Da Sea
-20,,NEGRIL,LOCALE,One Love Bus Bar Crawl,,,,,,44. One Love Bus Bar Crawl
-21,,NEGRIL,ADVENTURE,Reggae Horseback Riding,,,,18.23284819,-78.19439955,45. Reggae Horseback Riding
-22,,NEGRIL,ADVENTURE,Jamwest Motorsports and Adventure Park,,,,18.22123368,-78.22656603,56. Jamwest Motorsports and Adventure Park
-23,,NEGRIL,LOCALE,Calico Jack's Pirate Island,,,,18.38831292,-78.30095794,90. Calico Jack's Pirate Island
-24,,NEGRIL,ADVENTURE,Famous Vincent Glass Bottom Boats,,,,,,Famous Vincent Glass Bottom Boats
-25,,NEGRIL,ADVENTURE,Mayfield Falls River Walk,,,,18.44251962,-77.08533382,Mayfield Falls River Walk
-26,,NEGRIL,ADVENTURE,Blue Hole Mineral Spring,,,,18.22920106,-78.28271552,Blue Hole Mineral Spring
-27,,NEGRIL,SPIAGGIA,Half Moon Beach,,,,18.39188802,-78.29760249,Half Moon Beach
-28,,NEGRIL,CIBO,Zambalis Mountain Cooking studio,,,,18.29844131,-78.22779935,Zambalis Mountain Cooking studio
-29,,NEGRIL,LOCALE,Floyd’s Pelican Bar,,,,17.95120549,-77.84211687,Floyd’s Pelican Bar
-30,,NEGRIL,ADVENTURE,Rhodes Hall Plantation,,,,18.37743054,-78.30022042,Rhodes Hall Plantation
-31,,NEGRIL,CIBO,Bongos Restaurant ,,,,18.30159244,-78.33802476,Bongos Restaurant 
-32,,NEGRIL,CIBO,3 DIVES RESTAURANT,,,,18.26912144,-78.36792168,3 DIVES RESTAURANT
-33,,NEGRIL,ADVENTURE,Roaring River and Cave,,,,18.28523652,-78.05365559,Roaring River and Cave
-34,,NEGRIL,LOCALE,The Jungle Night Club,,,,18.29575477,-78.33729502,The Jungle Night Club
-35,,NEGRIL,CIBO,SWEET SPICE RESTAURANT,,,,18.29634768,-78.33911915,SWEET SPICE RESTAURANT
-36,,NEGRIL,LOCALE,Jimmy Buffett's Margaritaville,,,,18.32303512,-78.28797561,Jimmy Buffett's Margaritaville
-37,,NEGRIL,LOCALE,Tiki Pon Da Sea,,,,18.30584658,-78.33870418,Tiki Pon Da Sea
+5,,NEGRIL,LOCALE,BOURBON BEACH,,,,18.28828521,-78.34140208,https://www.tripadvisor.com/Restaurant_Review-g147313-d1232845-Reviews-Bourbon_Beach_Jamaica-Negril_Westmoreland_Parish_Jamaica.html
+6,,NEGRIL,LOCALE,RICK’S CAFE,,,,18.25444244,-78.36350184,https://www.tripadvisor.com/Attraction_Review-g147313-d149415-Reviews-Rick_s_Cafe-Negril_Westmoreland_Parish_Jamaica.html
+7,,NEGRIL,LOCALE,ROOTS BAMBOO,,,,18.29494629,-78.33858965,https://www.tripadvisor.com/Hotel_Review-g147313-d1566266-Reviews-Roots_Bamboo-Negril_Westmoreland_Parish_Jamaica.html
+8,,NEGRIL,ADVENTURE,BLACK RIVER,,,,18.02937464,-77.86544479,https://www.tripadvisor.com/Attraction_Review-g4606159-d148630-Reviews-Black_River-Black_River_Saint_Elizabeth_Parish_Jamaica.html
+9,,NEGRIL,SPIAGGIA,Booby Cay Island,,,,18.33805493,-78.3478974,https://www.tripadvisor.com/Attraction_Review-g147313-d2491846-Reviews-Booby_Cay_Island-Negril_Westmoreland_Parish_Jamaica.html
+10,,NEGRIL,ADVENTURE,Barney's Flower & Hummingbird Garden Jamaica,,,,18.24508666,-78.35279288,https://www.tripadvisor.com/Attraction_Review-g147313-d6403451-Reviews-Barney_s_Flower_Hummingbird_Garden_Jamaica-Negril_Westmoreland_Parish_Jamaica.html
+11,,NEGRIL,ADVENTURE,YS Falls,,,,18.1557681,-77.82549872,https://www.tripadvisor.com/Attraction_Review-g147313-d17154709-Reviews-YS_Falls-Negril_Westmoreland_Parish_Jamaica.html
+12,,NEGRIL,CULTURA,Negril Lighthouse,,,,18.24871489,-78.36029671,https://www.tripadvisor.com/Attraction_Review-g147313-d150411-Reviews-Negril_Lighthouse-Negril_Westmoreland_Parish_Jamaica.html
+13,,NEGRIL,SHOPPING,Times Square Mall,,,,18.28877689,-78.33952712,https://www.tripadvisor.com/Attraction_Review-g147313-d2615839-Reviews-Times_Square_Mall-Negril_Westmoreland_Parish_Jamaica.html
+14,,NEGRIL,CULTURA,Peter Tosh Monument,,,,18.14883388,-78.02864606,https://www.tripadvisor.com/Attraction_Review-g147313-d1028997-Reviews-Peter_Tosh_Monument-Negril_Westmoreland_Parish_Jamaica.html
+15,,NEGRIL,ADVENTURE,Blue Mountain Experience,,,,18.41184134,-77.08715378,https://www.tripadvisor.com/Attraction_Review-g147313-d2154393-Reviews-Blue_Mountain_Experience-Negril_Westmoreland_Parish_Jamaica.html
+16,,NEGRIL,RELAX,Ocean View Spa,,,,18.30765398,-78.33787287,https://www.tripadvisor.com/Attraction_Review-g147313-d10112613-Reviews-Ocean_View_Spa-Negril_Westmoreland_Parish_Jamaica.html
+17,,NEGRIL,ADVENTURE,JuJu Tours,,,,18.29245614,-78.33869897,https://www.tripadvisor.com/Attraction_Review-g147313-d2277207-Reviews-JuJu_Tours-Negril_Westmoreland_Parish_Jamaica.html
+18,,NEGRIL,ADVENTURE,Reef Explorer Diving Center,,,,18.30606091,-78.33831575,https://www.tripadvisor.com/Attraction_Review-g147313-d17747972-Reviews-Reef_Explorer_Diving_Center-Negril_Westmoreland_Parish_Jamaica.html
+19,,NEGRIL,TOUR,Tiki Pon Da Sea,,,,18.30576509,-78.33909042,https://www.tripadvisor.com/Attraction_Review-g147313-d17668727-Reviews-Tiki_Pon_Da_Sea-Negril_Westmoreland_Parish_Jamaica.html
+20,,NEGRIL,LOCALE,One Love Bus Bar Crawl,,,,"18.27785354584947, -78.34808510265631",,https://www.tripadvisor.com/Attraction_Review-g147313-d2626921-Reviews-One_Love_Bus_Bar_Crawl-Negril_Westmoreland_Parish_Jamaica.html
+21,,NEGRIL,ADVENTURE,Reggae Horseback Riding,,,,18.23284819,-78.19439955,https://www.tripadvisor.com/Attraction_Review-g147313-d6873203-Reviews-Reggae_Horseback_Riding-Negril_Westmoreland_Parish_Jamaica.html
+22,,NEGRIL,ADVENTURE,Jamwest Motorsports and Adventure Park,,,,18.22123368,-78.22656603,https://www.tripadvisor.com/Attraction_Review-g147313-d7182444-Reviews-Jamwest_Motorsports_and_Adventure_Park-Negril_Westmoreland_Parish_Jamaica.html
+23,,NEGRIL,LOCALE,Calico Jack's Pirate Island,,,,18.38831292,-78.30095794,https://www.tripadvisor.com/Attraction_Review-g147313-d7903584-Reviews-Calico_Jack_s_Pirate_Island-Negril_Westmoreland_Parish_Jamaica.html
+24,,NEGRIL,ADVENTURE,Famous Vincent Glass Bottom Boats,,,,,,https://www.tripadvisor.com/Attraction_Review-g147313-d2081117-Reviews-Famous_Vincent_Glass_Bottom_Boats-Negril_Westmoreland_Parish_Jamaica.html
+25,,NEGRIL,ADVENTURE,Mayfield Falls River Walk,,,,18.44251962,-77.08533382,https://www.islandroutes.com/caribbean-tours/jamaica/negril/23/mayfield-falls-river-walk
+26,,NEGRIL,ADVENTURE,Blue Hole Mineral Spring,,,,18.22920106,-78.28271552,https://www.tripadvisor.com/Attraction_Review-g1625485-d1640953-Reviews-Blue_Hole_Mineral_Spring-Little_Bay_Westmoreland_Parish_Jamaica.html
+27,,NEGRIL,SPIAGGIA,Half Moon Beach,,,,18.39188802,-78.29760249,https://www.tripadvisor.com/Attraction_Review-g41580-d2367266-Reviews-Half_Moon_Beach-Gloucester_Cape_Ann_Massachusetts.html
+28,,NEGRIL,CIBO,Zambalis Mountain Cooking studio,,,,18.29844131,-78.22779935,https://www.tripadvisor.com/Restaurant_Review-g147313-d3907659-Reviews-Zimbali_s_Mountain_Cooking_Studio-Negril_Westmoreland_Parish_Jamaica.html
+29,,NEGRIL,LOCALE,Floyd’s Pelican Bar,,,,17.95120549,-77.84211687,https://www.gettingstamped.com/floyds-pelican-bar-jamaica/
+30,,NEGRIL,ADVENTURE,Rhodes Hall Plantation,,,,18.37743054,-78.30022042,https://www.tripadvisor.com/Attraction_Review-g3200052-d148124-Reviews-Rhodes_Hall_Plantation-Green_Island_Hanover_Parish_Jamaica.html
+31,,NEGRIL,CIBO,Bongos Restaurant ,,,,18.30159244,-78.33802476,https://www.sandyhavenresort.com/dining/
+32,,NEGRIL,CIBO,3 DIVES RESTAURANT,,,,18.26912144,-78.36792168,https://www.tripadvisor.com/Restaurant_Review-g147313-d1120012-Reviews-3_Dives_Restaurant-Negril_Westmoreland_Parish_Jamaica.html
+33,,NEGRIL,ADVENTURE,Roaring River and Cave,,,,18.28523652,-78.05365559,https://www.tripadvisor.com/ShowUserReviews-g1636543-d3461796-r539455676-Roaring_River-Petersfield_Westmoreland_Parish_Jamaica.html
+34,,NEGRIL,LOCALE,The Jungle Night Club,,,,18.29575477,-78.33729502,https://www.instagram.com/thejunglenegril/?hl=en
+35,,NEGRIL,CIBO,SWEET SPICE RESTAURANT,,,,18.29634768,-78.33911915,https://www.tripadvisor.com/Restaurant_Review-g147313-d1232882-Reviews-Sweet_Spice_Restaurant-Negril_Westmoreland_Parish_Jamaica.html
+36,,NEGRIL,LOCALE,Jimmy Buffett's Margaritaville,,,,18.32303512,-78.28797561,https://www.tripadvisor.com/Restaurant_Review-g147313-d1047284-Reviews-Jimmy_Buffett_s_Margaritaville_Negril-Negril_Westmoreland_Parish_Jamaica.html
+37,,NEGRIL,LOCALE,Tiki Pon Da Sea,,,,18.30584658,-78.33870418,https://www.tripadvisor.com/Attraction_Review-g147313-d17668727-Reviews-Tiki_Pon_Da_Sea-Negril_Westmoreland_Parish_Jamaica.html
 38,,MONTEGO BAY,ADVENTURE,ROCKLANDS BIRD FEEDING STATION,,,,18.42617459,-77.94040685,
 39,,MONTEGO BAY,LOCALE,PIERRE ONE,,,,18.47142728,-77.92655653,
-40,,MONTEGO BAY,ADVENTURE,Martha Brae River,,,,18.35938378,-77.65859533,1. Martha Brae River
-41,,MONTEGO BAY,ADVENTURE,Abeokuta Paradise Nature Park,,,,18.25335972,-78.041728,16. Abeokuta Paradise Nature Park
+40,,MONTEGO BAY,ADVENTURE,Martha Brae River,,,,18.35938378,-77.65859533,https://www.tripadvisor.com/Attraction_Review-g147311-d153252-Reviews-Martha_Brae_River-Montego_Bay_Saint_James_Parish_Jamaica.html
+41,,MONTEGO BAY,ADVENTURE,Abeokuta Paradise Nature Park,,,,18.25335972,-78.041728,https://www.tripadvisor.com/Attraction_Review-g147311-d2057759-Reviews-Abeokuta_Paradise_Nature_Park-Montego_Bay_Saint_James_Parish_Jamaica.html
