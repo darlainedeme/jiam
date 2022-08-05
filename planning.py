@@ -157,10 +157,11 @@ elif option == 'By day':
 
     start_date = dt.date(year=2022,month=8,day=7) 
     end_date = dt.date(year=2022,month=8,day=18) 
+    max_days = end_date-start_date
 
     st.write('Per questa visualizzazione bisogna prima che fissiamo il giorno in cui vogliamo visitare ciascuna delle attivitá')
 
-    day = st.sidebar.slider('Select date', min_value=start_date, value=end_date)
+    day = st.sidebar.slider('Select date', min_value=start_date, value=end_date, max_value=end_date)
 
     # day = 'SPIAGGIA'
     
