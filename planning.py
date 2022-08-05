@@ -161,7 +161,7 @@ elif option == 'By day':
 
     st.write('Per questa visualizzazione bisogna prima che fissiamo il giorno in cui vogliamo visitare ciascuna delle attivitá')
 
-    day = st.sidebar.slider('Select date', min_value=start_date, value=end_date, max_value=end_date)
+    day = st.sidebar.slider('Select date', min_value=start_date, value=end_date, max_value=end_date, value=start_date)
 
     # day = 'SPIAGGIA'
     
