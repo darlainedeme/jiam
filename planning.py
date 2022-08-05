@@ -152,7 +152,10 @@ elif option == 'By type':
     feature_group_2.add_to(m)
     
 elif option == 'By day': 
-    days = st.sidebar.selectbox('Which day', list(places.Cosa.unique())[1:], index=1)
+    lenght = pd.date_range(start="2022-08-07",end="2022-08-18")
+    
+    days = st.sidebar.selectbox('Which day', list(lenght, index=1))
+    
     day = 'SPIAGGIA'
     
     feature_group_2 = folium.FeatureGroup(name=days, show=True)
