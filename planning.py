@@ -25,7 +25,7 @@ lat = places.geometry.y.mean()
 option = st.sidebar.selectbox('How would you like to filter the places?',
                               ['By city',
                                'By type',
-                               'By day'], index=1)         
+                               'By day'], index=0)         
      
 m = folium.Map(location=[lat, long], zoom_start=9)
 tile = folium.TileLayer(
@@ -72,16 +72,11 @@ def plotnegril(point):
     '''input: series that contains a numeric named latitude and a numeric named longitude
     this function creates a CircleMarker and adds it to your this_map'''
     folium.CircleMarker(location=[point.Latitude, point.Longitude],
-                        popup=str(point.Dove) 
-                        + "\n" 
-                        + "\n" 
-                        + str(point.Nome)
-                        + "\n" 
-                        + "\n" 
-                        + str(point.Descrizione),
+                        popup="<a href=" + point.Link + ">" + point.Nome + str"</a>"
                         color = 'red',
                         radius=2,
                         weight=5).add_to(feature_group_2)
+
 
 def plotantonio(point):
     '''input: series that contains a numeric named latitude and a numeric named longitude
